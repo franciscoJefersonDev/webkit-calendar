@@ -1,0 +1,23 @@
+@mixin button-reset {
+	border: none;
+	outline: none;
+}
+
+@mixin flex-center-center {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+@mixin ripples {
+	overflow: hidden;
+	position: relative;
+}
+
+@mixin btn-animated {
+  transition: border-radius linear 200ms, box-shadow linear 200ms;
+	--box-shadow-default: 0px 0px 0px 0px rgba(0, 0, 0, 0);
+	--box-shadow-after: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+	--border-radius-default: var(--brd-radius);
+	--border-radius-after: 0.2em;
+}
