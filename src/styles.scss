@@ -16,17 +16,17 @@
 }
 
 :root {
-  --bg-color: rgb(255, 255, 255);
-  --bg-primary: rgb(246, 107, 14);
+  --bg-color: 255, 255, 255;
+  --bg-primary: 246, 107, 14;
   --brd-radius: 1em;
   --fs: 1.05em;
-  --text-color: rgb(0, 0, 0);
+  --text-color: 0, 0, 0;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --bg-color: rgb(40, 40, 40);
-    --text-color: rgb(255, 255, 255);
+    --bg-color: 40, 40, 40;
+    --text-color: 255, 255, 255;
   }
 }
 
@@ -43,10 +43,11 @@ body {
   bottom: 0;
   width: 100%;
   height: 100%;
-  background-color: var(--bg-color);
+  background-color: rgb(var(--bg-color));
 }
 body #app {
   width: 100%;
   height: 100%;
-  max-width: 900px;
+  margin: auto;
+  max-width: 1200px;
 }
